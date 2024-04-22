@@ -7,7 +7,7 @@ import sys
 USER_BASE_URL = "https://jsonplaceholder.typicode.com/users/"
 TODOS_BASE_URL = "https://jsonplaceholder.typicode.com/todos?userId="
 
-def get_todos(employee_id): 
+def get_todos(employee_id):
     # get users infos
     response = requests.get(USER_BASE_URL + str(employee_id))
     user = json.loads(response.content)
